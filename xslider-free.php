@@ -4,7 +4,7 @@ Plugin Name: xSlider Free
 Plugin URI: http://xslider.develvet.com/free
 Description: xSlider Free - Multipurpose Slider Plugin for Wordpress
 Author: Develvet
-Version: 1.0.2
+Version: 1.0.3
 Author URI: http://www.develvet.com
  */
 
@@ -878,12 +878,16 @@ CREATE TABLE `" . $table . "` (
 		return $this->getXSlider($id);
 	}
 
+	public function arrayMapFun($v) {
+		return intval(trim($v));
+	}
+
 	public function showXSlider($id, $pages = array()) {
 		global $post;
 
 		if ($pages != "" && !empty($pages)) {
 			$ps = explode(",", $pages);
-			$ps = array_map(function ($v) {return intval(trim($v));}, $ps);
+			$ps = array_map(array($this, 'arrayMapFun'), $ps);
 			if (!in_array($post->ID, $ps)) {
 				return "";
 			}
