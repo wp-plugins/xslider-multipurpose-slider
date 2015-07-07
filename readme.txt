@@ -4,7 +4,7 @@ Donate link: http://xslider.develvet.com/
 Tags: slider, animations, effects, video, text split, 3d, slideshow
 Requires at least: 3.5.0
 Tested up to: 4.2.2
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,8 +44,4 @@ For demos, upgrade to premium version and to a complete list of differences betw
 6. Activate the plugin in the Plugin dashboard
 
 
-== Screenshots ==
-
-1. The all-in-one slider editor
-2. Slider list and templates
 

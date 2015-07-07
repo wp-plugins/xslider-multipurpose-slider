@@ -1,4 +1,21 @@
 
+version 1.0.4
+release date: 2015/07/07
+
+- bug fix: compatibility issue with other plugins using TweenMax
+
+
+---------------------
+
+
+
+version 1.0.3
+release date: 2015/06/05
+
+- avoid using php inline functions, not supported by all php versions
+
+
+---------------------
 
 
 version 1.0.1
