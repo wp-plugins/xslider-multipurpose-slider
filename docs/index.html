@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <title>xSlider Documentation</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <nav class="navbar navbar-default navbar-fixed-top" role="banner">
+         <div class="container">
+            <div class="navbar-header">
+               <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a href="" class="navbar-brand">xSlider Documentation</a>
+            </div>
+            <nav class="collapse navbar-collapse" role="navigation">
+               <ul class="nav navbar-nav">
+                  <li>
+                     <a href="http://xslider.develvet.com" target="_blank">Website</a>
+                  </li>
+                  <li>
+                     <a href="http://xslider.develvet.com/template-packs/" target="_blank">Template Packs</a>
+                  </li>
+                  <li>
+                     <a href="https://develvet.freshdesk.com" target="_blank">Support</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </nav>
+
+      <div class="container" style="margin-top:30px">
+         <div class="row">
+            <div class="col-md-3" id="leftCol">
+               <ul class="nav nav-stacked" id="sidebar">
+                  <li><a href="#installation">Installation</a></li>
+                  <li><a href="#templates">Templates Installation</a></li>
+                  <li><a href="#create">Creating a Slider</a></li>
+                  <li><a href="#slides">Slides</a></li>
+                  <li><a href="#elements">Elements</a></li>
+                  <li><a href="#working-area">Working Area</a></li>
+                  <li><a href="#project-settings">Slider Settings</a></li>
+                  <li><a href="#slider-list">Slider List</a></li>
+                  <li><a href="#templates-use">Using the Templates</a></li>
+                  <li><a href="#google-fonts">Google Fonts</a></li>
+                  <li><a href="#global-settings">Global Settings</a></li>
+               </ul>
+            </div>
+            <div class="col-md-9">
+
+               <h2></h2>
+               <p>
+                  <img src="images/xslider.png" style="width:100%; max-width:720px">
+               </p>
+               <h2 style="padding:50px 0 0 0">Welcome to xSlider</h2>
+               <p>
+                  Here you can find the official xSlider documentation. If you need further help, we'll be more than happy to assist you through our support pages. You can access our ticketing system by clicking on the "Support" button in the top menu.
+               </p>
+               <p>
+                  Current Version: <strong>1.0.0</strong>
+               </p>
+
+               <hr>
+
+               <h2 id="installation">Installation</h2>
+               <p>
+                  Once you have downloaded the zip archive from CodeCanyon, go to the Plugins tab in your WordPress Dashboard and click "Add New".
+               </p>
+               <p>
+                  <img src="images/xslider-installation-1.jpg" style="width:100%">
+               </p>
+               <p>
+                  Now you have to click on the "Upload Plugin" button.
+               </p>
+               <p>
+                  <img src="images/xslider-installation-2.jpg" style="width:100%">
+               </p>
+               <p>
+                  Then click on the "Browse" button and select the zip file.
+               </p>
+               <p>
+                  <img src="images/xslider-installation-3.jpg" style="width:100%">
+               </p>
+               <p>
+                  Once uploaded, active it. That's it!
+               </p>
+
+               <hr>
+
+               <h2 id="templates">Template Packs Installation</h2>
+               <p>
+                  xSlider can be extended with ready-to-use slider templates that you can easily import, modify its contents (texts, images, styles, etc.) and use in your website without having to create them from scratch! They comes as stand alone plugins, so to install them you can follow the steps described above in the <strong><a href="#installation">Installation</a></strong> paragraph, using the zip file of the pack instead of the xslider one.
+                  <br><br>
+                  xSlider already comes with a free template pack. You can download it from here:
+                  <br><br><br>
+                  <a class="free_pack" href="http://xslider.develvet.com/showreel" target="_blank">DOWNLOAD THE <strong>FREE</strong> TEMPLATE PACK</a>
+                  <br><br><br>
+                  Once downloaded, just follow the steps above, select the zip file and activate it. Once installed you'll find the templates in the xSlider main page. Using them is very easy. Just follow the steps describerd in the <a href="#templates-use">Using the Templates</a> paragraph.
+               </p>
+               <p class="note">
+                  <strong>NOTE</strong>: The template pack will also install some Google fonts. To avoid loading too many fonts on the website, by default they are disabled. You have to manually enable them by turning the <strong>Load on the website</strong> parameters to <strong>Yes</strong>. For more details see the <a href="#google-fonts">Google Fonts</a> paragraph.
+               </p>
+
+               <hr>
+
+               <h2 id="create">Creating a Slider</h2>
+               <p>
+                  To create a slider go to the xSlider main page and click on the <strong>CREATE SLIDER</strong> button.
+               </p>
+               <p>
+                  <img src="images/xslider-create.jpg" style="width:100%">
+               </p>
+               <p>
+                  You'll be redirected to the editing page with an extremely easy-to-use and all-in-one user interface that will look like this.
+               </p>
+               <p>
+                  <img src="images/xslider-create-2.jpg" style="width:100%">
+               </p>
+
+               <hr>
+
+               <h2 id="slides">Slides</h2>
+               <p>
+                  On the bottom left of the editing page you can manage the slides and change their settings.
+               </p>
+               <div class="row">
+                  <div class="col-md-6">
+                     <p>
+                        <img src="images/xslider-slides.jpg" style="width:100%; max-width:400px">
+                     </p>
+                  </div>
+                  <div class="col-md-6">
+                     <p>
+                        To add a new slide you have two options. By clicking on the <strong>Empty</strong> button <i>(position 1)</i> a new empty (without background) will be added in the last position, while the <strong>Images</strong> button <i>(position 2)</i> allows you to select one or more images from the WP Media Library. For each selected image a new slide will be added. You can change the slide positions by dragging and dropping them. The two icons on the righe of each line allows you to duplicate a slide with all its settings and elements <i>(position 3)</i> and to delete it <i>(position 4)</i>.
+                     </p>
+                     <p>
+                        The panels below allows you to edit the slide settings as described below.
+                     </p>
+                     <ul>
+                        <li><strong><a href="#slides-settings">Slide Settings</a></strong></li>
+                        <li><strong><a href="#slides-animation">Animation</a></strong></li>
+                        <li><strong><a href="#slides-bg">Background</a></strong></li>
+                        <li><strong><a href="#slides-ken">Ken Burns Effect</a></strong></li>
+                     </ul>
+                  </div>
+               </div>
+
+               <hr>
+               <a name="slides-settings"></a>
+               <h4>Slide Settings</h4>
+               <div class="row">
+                  <div class="col-md-4">
+                     <p>
+                        <img src="images/xslider-slides-slide.jpg" style="width:100%; max-width:400px; border:1px solid #eee">
+                     </p>
+                  </div>
+                  <div class="col-md-8">
+                     <p>
+                        This panel allows you to change the general settins of the slide.
+                     </p>
+                     <ul>
+                        <li><strong>Name</strong>: the name of the slide that is shown in the slide list above</li>
+                        <li><strong>Duration</strong>: how long the slide will be visible after its enter animation</li>
+                        <li><strong>At the end</strong>: you can choose between <i>Go to next slide</i> (at the end of the duration time the next slide will be shown) and <i>Do nothing</i> (nothing will happen after the duration time)</li>
+                     </ul>
+                     <p>
+                        Since the element time on screen and their effect speeds depends on the slide duration, when you change it the element speeds are re-computed base on the new value (see the <a href="#elements">Elements paragraph</a> for more details about element speed). The button <strong>Change duration preserving speeds</strong> allows you to change the slide duration without affecting the element speeds.
+                        <br><br>
+                        The button <strong>Copy the Current Slide</strong> allows you to copy the slide and all its settings and contained elements to another slider. By clicking this button a popup will be shown asking you to select the destination slider. Select it and click on the <i>COPY</i> button.
+                     </p>
+                  </div>
+               </div>
+
+               <hr>
+               <a name="slides-animation"></a>
+               <h4>Animation</h4>
+               <div class="row">
+                  <div class="col-md-4">
+                     <p>
+                        <img src="images/xslider-slides-animations.jpg" style="width:100%; max-width:400px; border:1px solid #eee">
+                     </p>
+                  </div>
+                  <div class="col-md-8">
+                     <p>
+                        This panel allows you to specify how the slider will be shown. You can choose one of the ready-to-use effects and its duration (you can also enter decimal values separated by comma). A realtime preview will be shown below.<br>
+                        If you choose the <i>none</i> effect or if you specify a zero duration, no effect will be appied to the slide.
+                     </p>
+                  </div>
+               </div>
+
+               <hr>
+               <a name="slides-bg"></a>
+               <h4>Background</h4>
+               <div class="row">
+                  <div class="col-md-4">
+                     <p>
+                        <img src="images/xslider-slides-bg.jpg" style="width:100%; max-width:400px; border:1px solid #eee">
+                     </p>
+                  </div>
+                  <div class="col-md-8">
+                     <p>
+                        In this panel you can find the background settings of the slide. You can choose between a transparent background, a solid color, an image taken from the media library or an image loaded from an external url.
+                     </p>
+                     <p>
+                        If you choose the <i>Image</i> or <i>External Url</i> options some settings will be shown. They allow you to specify how the background image will be placed and resized. The first property is <strong>Fit</strong> with the following available values:
+                        <ul>
+                           <li><strong>None</strong>: the image will never be resized</li>
+                           <li><strong>Contain</strong>: the image is alway fully visible, but blank spaces may be shown</li>
+                           <li><strong>Cover</strong>: the image will always cover the slider, but some parts may be hided</li>
+                        </ul>
+                        The <strong>Repeat</strong> property is useful for repeteable patterns. You can choose to repeat the image horizontally (repeat-x), vertically (repeat-y), in both directions (repeat). If you choose the no-repeat value (the default one) the image will never be repeated.<br>
+                        The <strong>Position</strong> property controls how your image is positioned inside the slide.<br>
+                        Even if you choose a background image, you can still selecting a background color. This could be useful if your image has transparent parts.<br>
+                     </p>
+                  </div>
+               </div>
+               <p>
+                  The <strong>Overlay</strong> setting could be very useful if you have low quality or small size image. In this case, if your slider is resonsive your image could be stretched to higher dimensions and shown with poor quality. If you enable this property a pixelated overlay is placed over the background image reducing that effect. You can also choose to show the overlay when the slide width exceeds a certain value. Leave it blank if you wish it to be always visible.
+               </p>
+
+               <hr>
+               <a name="slides-ken"></a>
+               <h4>Ken Burns Effect</h4>
+               <div class="row">
+                  <div class="col-md-4">
+                     <p>
+                        <img src="images/xslider-slides-ken.jpg" style="width:100%; max-width:400px; border:1px solid #eee">
+                     </p>
+                  </div>
+                  <div class="col-md-8">
+                     <p>
+                        This panel allows you to enable the Ken Burns Effect (<a href="http://en.wikipedia.org/wiki/Ken_Burns_effect" target="_blank">open Wikipedia</a>) on your background image (if you select a transparent or solid color background you won't see this settings). It applies a smooth and continuous effect (pan, zoom, rotation) to your image creating a very impactful experience.
+                     </p>
+                     <ul>
+                        <li><strong>Duration</strong>: usually you should set the same duration as the slide</li>
+                        <li><strong>Delay</strong>: a time to wait for before starting the effect</li>
+                        <li><strong>Start/End Scale</strong>: the start/end zoom parameters. If, for example, you wish to start from the original size and zooming the starting value should be 1 and the end one a bit more (i.e. <i>1.2</i>)</li>
+                        <li><strong>Start/End Rotation</strong>: these values affects the rotation of the image. You should use low values near zero</li>
+                        <li><strong>Center</strong>: the zoom center. If you choose <i>50%</i> values the image is always centered while zooming (you will see the center of the image coming to you). But if you choose different values you will see a sort of pan effect. For example, choosing <i>0% 0%</i> the image will be scaled having the top left point as the center. So while zooming you'll see the image moving to the right bottom</li>
+                        <li><strong>Easing</strong>: the effect easing (see the <a href="http://greensock.com/ease-visualizer" target="_blank">Ease Visualizer</a> for more details). Usually <i>Linear.easeNone</i> and <i>Power1.easeIn</i> grant the best visual experience</li>
+                     </ul>
+                  </div>
+               </div>
+
+               <hr>
+
+               <h2 id="elements">Elements</h2>
+               <p>
+                  On the bottom right of the editing page you can manage the elements of the current selected slide.
+               </p>
+               <p>
+                  <img src="images/xslider-elements-no.jpg" style="width:100%;">
+               </p>
+               <p>
+                  By clicking the <strong>Add Element</strong> button you will be prompted to select the element type, as show in the picture below.
+               </p>
+               <p>
+                  <img src="images/xslider-elements-add.jpg" style="width:100%;">
+               </p>
+               <p>
+                  After adding some elements they are shown in the main timeline as show below.
+               </p>
+               <p>
+                  <img src="images/xslider-elements.jpg" style="width:100%;">
+               </p>
+               <p>
+                  The icon number 1 allows you to sort the element as you prefer by dragging them to another position. The element positions reflect how thei are positioned in the slide. This means that an element with a higher position will be placed over the ones with a lower position.<br>
+                  By clicking the icon number 2 you can show/hide an element on screen, while icon numer 3 allow you to lock it, avoiding it to be dragged ed edited.<br>
+                  Icons number 4, 5 and 6 can be used to duplicate an element, copy an element to another slide (a popup will ask you to select the destination slide) and to delete it.
+                  <br><br>
+                  By dragging the orange pins on the sides of the yellow bar you can control when the element will be shown and how long it will stay on the scene before being hided. You can see the details (in seconds) in the <i>Element</i> panel described below. These times are base on the slide duration. If, for example, the current slider has a 10 second duration and your yellow bar has a full width, the element will be shown as soon as the slide appears and it will stay on the scene for the entire slide duration. If instead you drag the left pin to the middle, the element will appear after 5 seconds (50% of the slide duration).
+               </p>
+               <p>
+                  <img src="images/xslider-elements-panels.jpg" style="width:100%;">
+               </p>
+               <p>
+                  As show in the above picture, below the main timeline you can find some panels that allow you to control the element settings. Some of them are common to all types of elements, while others are specific for each type.
+               </p>
+               Common Panels:
+               <ul>
+                  <li><strong><a href="#elements-element">Element Basic Settings</a></strong></li>
+                  <li><strong><a href="#elements-container">Element Container</a></strong></li>
+                  <li><strong><a href="#elements-animations">Animations</a></strong></li>
+                  <li><strong><a href="#elements-parallax">Parallax Effect</a></strong></li>
+                  <li><strong><a href="#elements-interactivity">Adding Interactivity</a></strong></li>
+               </ul>
+               Specific Panels:
+               <ul>
+                  <li><strong><a href="#elements-text">Text Element Type</a></strong></li>
+                  <li><strong><a href="#elements-image">Image Element Type</a></strong></li>
+                  <li><strong><a href="#elements-icon">Font Icon Element Type</a></strong></li>
+                  <li><strong><a href="#elements-youtube">Youtube Element Type</a></strong></li>
+                  <li><strong><a href="#elements-vimeo">Vimeo Element Type</a></strong></li>
+                  <li><strong><a href="#elements-video">Html5 Video Element Type</a></strong></li>
+                  <li><strong><a href="#elements-empty">Empty Element Type</a></strong></li>
+                  <li><strong><a href="#elements-custom">Custom Element Type</a></strong></li>
+               </ul>
+
+               <hr>
+               <a name="elements-element"></a>
+               <h4>Element Basic Settings</h4>
+               <p>
+                  <img src="images/xslider-elements-element.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  Inside this panel you can find some basic settings. The element <strong>name</strong> is used only inside the element list and it could be useful to identify them. <strong>Start</strong>, <strong>End</strong> and <strong>Duration</strong> are the linked to the yellow bar and show you when the element comes into the scene and when it leaves it. In the second line you can find the element position inside the slide. You can change those values manually or dragging the element in the editor. We've also provided you with two useful buttons to quickly center the element horizontally and vertically. The <strong>Class Name</strong> input allows you to specify a custom class name to be added to the element.
+               </p>
+
+               <hr>
+               <a name="elements-container"></a>
+               <h4>Element Container</h4>
+               <p>
+                  <img src="images/xslider-elements-container.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  Each element has its container that is a standard div element with its own settings.
+               </p>
+               <ul>
+                  <li><strong>Background</strong>: the container can have a transparent background, a solid color or an image. If you choose <i>image</i> or <i>external url</i> some other settings will be show:</li>
+                     <li style="margin-left:30px;"><strong>Background Fit</strong>: how the image have to be resized accorgin to the container dimensions. <i>none</i> means that the image will never be resized, with <i>contain</i> the image is alway fully visible but blank spaces may be shown, while with <i>cover</i> the image will always cover the slider, but some parts may be hided</li>
+                     <li style="margin-left:30px;"><strong>Repeat</strong>: it's useful for repeteable patterns. You can choose to repeat the image horizontally (repeat-x), vertically (repeat-y), in both directions (repeat). If you choose the no-repeat value (the default one) the image will never be repeated</li>
+                     <li style="margin-left:30px;"><strong>Position</strong>: it controls how your image is positioned inside the slide. Even if you choose a background image, you can still selecting a background color. This could be useful if your image has transparent parts</li>
+                  <li><strong>Overflow</strong>: if set to <i>yes</i> what it's outside the container won't be shown</li>
+                  <li><strong>Padding</strong>: the inner margin of the container</li>
+                  <li><strong>Opacity</strong>: a value between 0 (not visible) and 1 (fully visible) for transparency</li>
+                  <li><strong>Border</strong>: the container border size (in pixel), its style (solid, dotted, etc.) and its radius (for rounded borders - insert a value in pixel)</li>
+                  <li><strong>Rotations</strong>: the container can be rotated along each 3d axe</li>
+                  <li><strong>Shadow</strong>: it allows you to specify the shadow horizontal size (<i>Shadow H</i>), the vertical size (<i>Shadow V</i>), the blur amount and the shadow color</li>
+               </ul>
+
+               <hr>
+               <a name="elements-animations"></a>
+               <h4>Animations</h4>
+               <p>
+                  <img src="images/xslider-elements-animations.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  xSlider already comes with a lot of ready-to-use animations that allows you to create stunning sliders.
+                  <br><br>
+                  On top of the panel you can see the <i>loop effects</i> (position 1) that can be applied to elements and they are always in play. The <strong>Speed</strong> parameter specify the effect velocity.
+                  <br><br>
+                  Below you can find a new timeline where you can specify how the element appers into the scene, what happens during the slide execution and how it leaves the slide. As you can see, when you add a new element to a slide, three default effects are already there. The first one is the enter effect that can be used to make the element enter the scene with an animation. For this effect you can only change its duration by dragging the right pin.<br>
+                  The last one is the opposite, i.e. the exit effect. Its duration can be changed dragging the left pin.<br>
+                  In the middle you can place as many effects as you wish. This kind of effects allows the element to move, pulse, rotate, flash, etc. (try changing effect and see the result inside the preview box) during the slide execution. For these effects you can specify the start and end points.
+                  <br><br>
+                  <strong>An example</strong><br>
+                  To better understand how these effects work, let's consider a simple example. Suppose that the current slide has a 20 seconds duration and that the current element enters after 5 seconds and exits 10 seconds later (5 seconds before the slide exits). Now on the top right of the effect timeline (poistion 4) you'll see 10 seconds. This means that the element time on screen is 10 seconds. So, for example, if we drag the right pin of the enter effect to the middle of the timeline the enter effects duration is set to 5 seconds (half the element time on screen). And the same for the other effects.
+               </p>
+               <p>
+                  <strong>Moving elements from a point to another</strong><br>
+                  xSlider allows you to move elements from a point to another. If you open the effects select of one of the effects in the middle, you can see that some of them starts with the <strong>move</strong> keyword. If you select one of them a new button containing a terget icon will be show (position 1) as you can see in the picture below.
+                  <br><br>
+                  <img src="images/xslider-elements-move.jpg" style="width:100%; border:1px solid #eee">
+                  <br><br>
+                  If you click on that button, a new div containing the text "MOVE" will be placed over you element. Move it to your desired end position and the element will be move along that path.
+                  <br><br>
+                  <img src="images/xslider-elements-move-1.jpg" style="width:100%;"><br>
+                  <strong style="line-height:40px"><i>Step 1 - before clicking on the target button</i></strong>
+                  <br><br>
+                  <img src="images/xslider-elements-move-2.jpg" style="width:100%;">
+                  <strong style="line-height:40px"><i>Step 2 - by clicking on the target button a new div is shown</i></strong>
+                  <br><br>
+                  <img src="images/xslider-elements-move-3.jpg" style="width:100%;">
+                  <strong style="line-height:40px"><i>Step 3 - drag the div to the end position</i></strong>
+                  <br><br>
+                  You can repeat this process as many times as you want, chaining more than one move animations.
+               </p>
+               <p>
+                  <strong>Text Splitting</strong><br>
+                  If you are editing the animations of a <i>text element</i> the option at position 3 is shown. It allows you to specify if all the timeline effects have to be applied to the entire text (the default option), to letters, words or lines. In the last three cases the text is splitted into letters, words or lines and the animations are applied to each text part with a delay between them. This delay can be set filling in the field at position 2 with a value between 0 and 100 (the greater the value the longer the delay).
+               </p>
+               <p class="note">
+                  <strong>OVERLAPPING EFFECTS & PERFORMANCES</strong><br>
+                  You are free to overlap animations to create even more complex effects. But be awere that introducing many effects can be stress the cpu and some old pc could perform them slowly and jerky. Please also note that if the text is splitted into parts the overlapped effects couldn't work as expected.
+               </p>
+
+               <hr>
+               <a name="elements-parallax"></a>
+               <h4>Parallax Effects</h4>
+               <p>
+                  <img src="images/xslider-elements-parallax.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  We've developed a parallax engine that allows elements to move at different speeds according to the mouse movements. To enable this feature you have only to set a <i>parallax level</i> to each element you wish to be moved (and of course the <a href="#settings">main parallax setting</a> has to be on <i>yes</i>). Since the greater the value you specify the stronger is the element movement, to create a realistic effect you should set smaller values to far elements and greater values to the near ones.
+               </p>
+
+               <hr>
+               <a name="elements-interactivity"></a>
+               <h4>Adding Interactivity</h4>
+               <p>
+                  <img src="images/xslider-elements-interactivity.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  The last panel allows you to add interactivity to each element. You can set a specific effect to be executed on mouse over and its durations. Going with the mouse pointer over the black box on the left you can then see a preview of the effect.
+                  <br>You can also specify what has to be done when the user clicks on the element, choosing one of the following options:
+               </p>
+               <ul>
+                  <li><strong>none</strong>: nothing happens</li>
+                  <li><strong>open a link</strong>: you can specify an url and if it has to be opened in the same window or in a new one</li>
+                  <li><strong>go to slide</strong>: select a specific slide to go to</li>
+                  <li><strong>call javascript code</strong>: you can add your javascript code inside the enhanced editor that will be shown</li>
+               </ul>
+
+               <hr>
+               <a name="elements-text"></a>
+               <h4>Text Element Type</h4>
+               <p>
+                  <img src="images/xslider-elements-text.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  This panel allows you to set the text element properties. Here you can find a description of the settings displayed in this panel:
+               </p>
+               <ul>
+                  <li><strong>Text/Html</strong>: the first parametertells xSlider how to render the your text. The default value is <i>Plain Text</i> and it means that if, for example, you enter a text like &lt;div&gt; it will be rendered as text, so the div tag won't be interpreted. In this case you can specify the <strong>White Space</strong> option, to tell to the browser how to manage new lines. Even if choosing one of the available values require a good knowledge of the css, you shouldn't have to change the default value. If you choose <i>html</i> you can then enter html code and xSlider will render it as expected</li>
+                  <li><strong>Alignment</strong>: you can choose how the text is aligned inside its container</li>
+                  <li><strong>Font</strong>: there are some settings to style your text as you prefer. The <strong>Font</strong> option allows you to select a standard font or a Google one (please take a look at the <a href="#google-fonts">Google Fonts</a> paragraph)</li>
+                  <li><strong>Tag</strong>: xSlider is SEO friendly and allows you to specify the tag type to use for you text</li>
+                  <li><strong>Opacity</strong>: a value between 0 (not visible) and 1 (fully visible) for transparency</li>
+                  <li><strong>Rotations</strong>: the text can be rotated along each 3d axe</li>
+                  <li><strong>Shadow</strong>: it allows you to specify the shadow horizontal size (<i>Shadow H</i>), the vertical size (<i>Shadow V</i>), the blur amount and the shadow color</li>
+               </ul>
+
+               <hr>
+               <a name="elements-image"></a>
+               <h4>Image Element Type</h4>
+               <p>
+                  <img src="images/xslider-elements-image.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  This panel allows you to set the image element properties. Here you can find a description of the settings displayed in this panel:
+               </p>
+               <ul>
+                  <li><strong>Change Image</strong>: this button allows you to change the image choosing another one from the WP Media Library</li>
+                  <li><strong>Alt Attribute</strong>: to grant a better searchability to your images you can specify the description to be placed into the alt attribute</li>
+                  <li><strong>Dimensions</strong>: you can change the image width and height both manually inserting the values or by resizing the image width the mouse (please see the <a href="#working-area">Working Area</a> paragraph). If you set the <strong>Preserve Aspect Ratio</strong> to true, when you change one dimension, the other one is automatically calculated based on the image ratio</li>
+                  <li><strong>Opacity</strong>: a value between 0 (not visible) and 1 (fully visible) for transparency</li>
+                  <li><strong>Rotations</strong>: the image can be rotated along each 3d axe</li>
+                  <li><strong>Shadow</strong>: it allows you to specify the shadow horizontal size (<i>Shadow H</i>), the vertical size (<i>Shadow V</i>), the blur amount and the shadow color</li>
+               </ul>
+
+               <hr>
+               <a name="elements-icon"></a>
+               <h4>Font Icon Element Type</h4>
+               <p>
+                  <img src="images/xslider-elements-icon.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  This panel allows you to set the font icon element properties. Here you can find a description of the settings displayed in this panel:
+               </p>
+               <ul>
+                  <li><strong>Change Icon</strong>: this button allows you to change the icon. If you click on it a popup with all the available font icons (xSlider uses <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome 4</a>) will be shown. Just click on one of them to choose the new one</li>
+                  <li><strong>Color</strong>: the icon color</li>
+                  <li><strong>Size</strong>: since the icons are font chars, you can set their size as you normally do for texts. So, specify a value in pixel for the <strong>Size</strong> and the <strong>Line Height</strong> (usually the same as the size)</li>
+                  <li><strong>Opacity</strong>: a value between 0 (not visible) and 1 (fully visible) for transparency</li>
+                  <li><strong>Rotations</strong>: the icon can be rotated along each 3d axe</li>
+                  <li><strong>Shadow</strong>: it allows you to specify the shadow horizontal size (<i>Shadow H</i>), the vertical size (<i>Shadow V</i>), the blur amount and the shadow color</li>
+               </ul>
+
+               <hr>
+               <a name="elements-youtube"></a>
+               <h4>Youtube Element Type</h4>
+               <p>
+                  <img src="images/xslider-elements-youtube.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  This panel allows you to set the Youtube element properties. Here you can find a description of the settings displayed in this panel:
+               </p>
+               <ul>
+                  <li><strong>Code</strong>: this is the video code and you can find it in its url (i.e. https://www.youtube.com/watch?v=<strong>CODE</strong>)</li>
+                  <li><strong>Dimensions</strong>: width and height of the video. Note that if you specify values with a different ratio from the video one, the Youtube player will show a black background to fill the empty spaces</li>
+                  <li><strong>Opacity</strong>: a value between 0 (not visible) and 1 (fully visible) for transparency</li>
+                  <li><strong>Controls</strong>: show/hide the youtube player controls</li>
+                  <li><strong>Show Info</strong>: show/hide title and authors</li>
+                  <li><strong>Autoplay</strong>: if set to <i>yes</i> the video starts playing as soon as it enter into the scene</li>
+                  <li><strong>Rotations</strong>: the video can be rotated along each 3d axe</li>
+                  <li><strong>Shadow</strong>: it allows you to specify the shadow horizontal size (<i>Shadow H</i>), the vertical size (<i>Shadow V</i>), the blur amount and the shadow color</li>
+               </ul>
+
+               <hr>
+               <a name="elements-vimeo"></a>
+               <h4>Vimeo Element Type</h4>
+               <p>
+                  <img src="images/xslider-elements-vimeo.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  This panel allows you to set the Vimeo element properties. Here you can find a description of the settings displayed in this panel:
+               </p>
+               <ul>
+                  <li><strong>Code</strong>: this is the video code and you can find it in its url (i.e. http://vimeo.com/<strong>CODE</strong>)</li>
+                  <li><strong>Dimensions</strong>: width and height of the video. Note that if you specify values with a different ratio from the video one, the Vimeo player will fill the empty spaces with a background</li>
+                  <li><strong>Opacity</strong>: a value between 0 (not visible) and 1 (fully visible) for transparency</li>
+                  <li><strong>Show Title</strong>: show/hide the video title</li>
+                  <li><strong>Show ByLine</strong>: show/hide the video author</li>
+                  <li><strong>Enable Badge</strong>: enables or disables the badge on the video</li>
+                  <li><strong>Allow Fullscreen</strong>: enables or disables the fullscreen features</li>
+                  <li><strong>Autoplay</strong>: if set to <i>yes</i> the video starts playing as soon as it enter into the scene</li>
+                  <li><strong>Controls Color</strong>: the colors of some Vimeo player elements</li>
+                  <li><strong>Rotations</strong>: the video can be rotated along each 3d axe</li>
+                  <li><strong>Shadow</strong>: it allows you to specify the shadow horizontal size (<i>Shadow H</i>), the vertical size (<i>Shadow V</i>), the blur amount and the shadow color</li>
+               </ul>
+
+               <hr>
+               <a name="elements-video"></a>
+               <h4>Html5 Video Element Type</h4>
+               <p>
+                  <img src="images/xslider-elements-html5-video.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  This panel allows you to set the Html5 video element properties. Here you can find a description of the settings displayed in this panel:
+               </p>
+               <ul>
+                  <li><strong>Files</strong>: you can specify one or more video files (Mp4, WebM and Ogg - for a better understanding of the html5 videos we suggest you to read the <a href="http://www.w3schools.com/html/html5_video.asp" target="_blank">w3schools.com description</a>). You can both load them from the media library or from an external url</li>
+                  <li><strong>Poster Image</strong>: it specifies an image to be shown while the video is downloading, or until the user hits the play button</li>
+                  <li><strong>Controls</strong>: show/hide the youtube player controls</li>
+                  <li><strong>Autoplay</strong>: if set to <i>yes</i> the video starts playing as soon as it enter into the scene</li>
+                  <li><strong>Mute</strong>: enable/disable the audio</li>
+                  <li><strong>Loop</strong>: if set to <i>yes</i> when the video finishes it's started again</li>
+                  <li><strong>Play/Pause on Click</strong>: if set to <i>yes</i> you allow users to stop the video by clicking on it</li>
+                  <li><strong>Dimensions</strong>: width and height of the video</li>
+                  <li><strong>Opacity</strong>: a value between 0 (not visible) and 1 (fully visible) for transparency</li>
+                  <li><strong>Shadow</strong>: it allows you to specify the shadow horizontal size (<i>Shadow H</i>), the vertical size (<i>Shadow V</i>), the blur amount and the shadow color</li>
+               </ul>
+
+               <hr>
+               <a name="elements-empty"></a>
+               <h4>Empty Element Type</h4>
+               <p>
+                  <img src="images/xslider-elements-empty.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  An empty element consists only in the container element. To change its dimensions you can both manually set width and height or resize it with the mouse. To style the element please refer to the <a href="#elements-container">container panel</a>.
+               </p>
+
+               <hr>
+               <a name="elements-custom"></a>
+               <h4>Custom Element Type</h4>
+               <p>
+                  <img src="images/xslider-elements-custom.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  A custom element allows you to add your own html, css ans javascript code. <strong>Please note that since they are placed on the scene and shown dynamically we can't grant that every javascript code will work correctly</strong>.
+               </p>
+
+
+               <hr>
+
+               <h2 id="working-area">Working Area</h2>
+               <p>
+                  The Working Area allows you to have a look at where the elements of the current slide are placed and to move and resize them using the mouse or the keyboard arrows.
+               </p>
+               <p>
+                  <img src="images/xslider-editor.jpg" style="width:100%;">
+               </p>
+               <p>
+                  When you add a new element to the current slide, it has shown in working area and can be dragged with the mouse. Some elements (images, empty, etc.) can also be resized by dragging the white handle icon placed on the bottom right of the element.<br>
+                  To allow you to easily align elements with each other we've introduced the <strong>grid</strong> (enable it in position 1) feature that shows horizontal and vertical lines over the working area. The line distance and color can be set by changing the values in position 2 and 3, while enabling the <strong>Snap</strong> option (position 4) the grid almost seems magnetic and when you move an element it will be aligned with the nearest line.<br>
+                  The options in position 5 and 6 show/hide arrows and bullets in the working area. The <strong>Move with keyboard</strong> option allows you to move the current selected element using the keyboard arrows. The two buttons <strong>PLAY SLIDE</strong> and <strong>PLAY ALL</strong> open a popup preview of the current slide or of the entire slider.
+               </p>
+
+
+               <hr>
+               <h2 id="project-settings">Slider Settings</h4>
+               <p>
+                  On the top of the page you can find the <strong>Project Settings</strong> button. If you click on it some panel will be show. Each one of them allows you to control a specific group of settings.
+               </p>
+               <p>
+                  <img src="images/xslider-project-settings.jpg" style="width:100%">
+               </p>
+               <p>
+                  Here is a brief description of what they deal with:
+               </p>
+               <ul>
+                  <li><strong><a href="#embed">Embedding Methods</a></strong>: here you'll find some methods to add the slider to your website</li>
+                  <li><strong><a href="#layout">Layout</a></strong>: it allows you to specify the dimensions of the slider, the slide backgrounds and the slide contents and their responsiveness</li>
+                  <li><strong><a href="#settings">Settings</a></strong>: the slider general settings</li>
+                  <li><strong><a href="#mobile">Mobile</a></strong>: specific settings for mobile and tablet devices</li>
+                  <li><strong><a href="#look">Main Look</a></strong>: here you can set the main background color and edit the slider css styles</li>
+                  <li><strong><a href="#arrows">Arrows</a></strong>: here you can edit the position and look of the slider arrows</li>
+                  <li><strong><a href="#bullets">Bullets</a></strong>: and here you can edit the position and look of the slider bullets</li>
+                  <li><strong><a href="#preload">Preload</a></strong>: it allows you to change the look of the preloader</li>
+               </ul>
+
+               <hr>
+               <a name="embed"></a>
+               <h4>Embedding Methods</h4>
+               <p>
+                  <img src="images/xslider-embed.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  Once saved your project, inside this panel you can find different methods to add the slider to your website.
+               </p>
+               <ul>
+                  <li><strong>Shortcode</strong>: copy and paste the shortcode inside your text editor</li>
+                  <li><strong>Widget</strong>: go to the Appearance/Widgets menu, select the xSlider widget and choose one of your sliders</li>
+                  <li><strong>Php</strong>: using the php <strong>showXSlider(ID, [pages])</strong> function you can place your sliders anywhere in your website. It accepts two parameters: the first one is the slider ID, while the second is an array that allows you to specify the exact pages where is has to be shown. You can find the page or post ID inside the url - i.e. http://yourdomain.com/wp-admin/post.php?post=ID&action=edit</li>
+               </ul>
+
+
+
+               <hr>
+               <a name="layout"></a>
+               <h4>Layout</h4>
+               <p>
+                  <img src="images/xslider-layout.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  In this panel you can set the width and height of the slider and choose how its components have to be resized. xSlider has composed by three main divs: the main container and the background and content of each slide. For each one of these three components you can choose how they are resized according to the browser window size. You can choose between a fixed size (this means that the component won't be resized anyhow) or responsive (you can also set a minimum and maximum width). The preview box on the left shows you how they work.
+               </p>
+               <p class="note">
+                  <strong>NOTE</strong>: in the main editor, the slide content is always fixed. If you need to see a real preview you can click on the <strong>PLAY SLIDE</strong> or <strong>PLAY ALL</strong> buttons.
+               </p>
+
+               <hr>
+               <a name="settings"></a>
+               <h4>Settings</h4>
+               <p>
+                  <img src="images/xslider-settings.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  Here you can specify some general settings:
+               </p>
+               <ul>
+                  <li><strong>Perspective</strong>: it allows you to change the perspective on how 3D elements are viewed (this is the css3 perspective property). The smaller the value the higher the perspective effect</li>
+                  <li><strong>Parallax</strong>: to enable/disable the parallax effect - see below</li>
+                  <li><strong>Parallax Mouse Area</strong>: if you choose <i>entire window</i>, the elements (with a parallax value greater than 0 - see below) will be moved based on mouse movements around the browser window. If you select <i>slider</i> mouse movements outside the slider boundaries won't move the elements</li>
+                  <li><strong>Keyboard Navigation</strong>: to enable/disable the navigation using the keyboard arrows</li>
+                  <li><strong>Start</strong>: you can specify when the slider has to start: when the contents become visible (i.e. scrolling), on window load (after all page contents have been loaded) or on document ready (after the HTML document has been loaded)</li>
+                  <li><strong>Delay</strong>: you can also set a starting delay</li>
+                  <li><strong>Visibility Threshold</strong>: if you choose to start the slider animations when it becomes visible on page, you can also specify a minimum threshold (in pixel). The slider animations are fired only if al least a height equal or grater than the threshold is visible</li>
+               </ul>
+
+               <hr>
+               <a name="mobile"></a>
+               <h4>Mobile</h4>
+               <p>
+                  <img src="images/xslider-mobile.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  This panel allows you to set some specific settings for mobile and tablet devices. You can enable or disable the entire slide or some of its elements and enable/disable the touch feature (and you can also specify a pixel threshold and a maximum time for swipe detection).<br>
+                  With the <strong>Page Scroll on Swipe</strong> property you can specify if and how the page scrolls when you do a swipe over the slider. You can also choose to detect or not swipes made by the mouse.
+               </p>
+
+               <hr>
+               <a name="look"></a>
+               <h4>Main Look</h4>
+               <p>
+                  <img src="images/xslider-look.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  You can change the main background of the slider choosing between a solid color, an image loaded from the WP media library or from an url, or a transparent background. If you choose an images you can then specify how it has to be resized and repeated. This could be very useful for repeatable textures.
+               </p>
+               <p>
+                  By clicking the <strong>EDIT CSS</strong> button, a popup will be show allowing you to edit the mail css styles of the slider and its elements. As you can see, we've integrated the ACE editor that provide you with syntax checking and automatic indentation. But this is an advanced usage and, since xSlider allows you to edit virtually all the element setting through its UI, you most likely won't need to use these features.
+               </p>
+
+               <hr>
+               <a name="arrows"></a>
+               <h4>Arrows</h4>
+               <p>
+                  <img src="images/xslider-arrows.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  This panel allows you to change the aspect of the navigation arrows. The first property is the type of arrows (images, font icons - for fully responsiveness, or no arrows). If you want to use <i>font icons</i>, you can then choose one of the ready-to-use icons (xSlider uses <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome 4</a>) and set their size, color, styles and the hover effect time. A realtime preview allows you to see the result. If the <i>Auto Responsive</i> property is set to yes the arrows are fully responsive and automatically scaled according to the slider dimensions, while if it's set to no they will have always the size you select.<br>
+                  If you choose <i>image</i> arrows, you are then prompted to select the left and right arrow images to load. Also for this type of arrows you can set the style.<br>
+                  In both cases the arrows have a container that can be skinned changing its background color (and how it changes on mouse over), padding, border and shadow. If you leave these setting blank your arrows will be shown without any background.
+                  The navigation arrows can be places in different positions. You can specify where they have to be shown by selecting one of the predefined values and the border distance. While in the small preview window you can see how the arrows will look, inside the main editor you can see where they will be positioned.<br>
+                  If the <i>Always Visible</i> property is set to yes, the arrows are always visible, while if it's set to no they are visible only when the mouse goes over the slider. In this case you can specify the duration of the fade effect.<br>
+                  The button <i>Copy Arrows Settings</i> allows you to copy all the settings in this panel to another slider. By clicking this button a popup will be shown asking you to select the destination slider. Select it and click on the <i>COPY</i> button.
+               </p>
+
+               <hr>
+               <a name="bullets"></a>
+               <h4>Bullets</h4>
+               <p>
+                  <img src="images/xslider-bullets.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  The bullets can be change in the same way as arrows. You can choose between font icons, images or to not show bullets. You can choose a ready-to-use font icon, set its size and specify if it has to be responsive. In such a case, you can also choose a minimum and maximum size. Some style settings allows you to give your preferred style to the bullets, choose the hover color and effect time and shadows.<br>
+                  The <i>position</i> select allows you to set the bullets position inside the slider and the distance between them. As for the arrows, a realtime preview of the bullets aspect will be shown inside the small window, while you can see their position insider the main editor below.
+               </p>
+
+               <hr>
+               <a name="preload"></a>
+               <h4>Preload</h4>
+               <p>
+                  <img src="images/xslider-preload.jpg" style="width:100%; border:1px solid #eee">
+               </p>
+               <p>
+                  This panel allows you to change the aspect of the preload. You can choose your preferred font and its size, spacing, weight, color and styles of the percentage text, you can add a shadow to that text and choose a background color. You can then specify the position of the progress bar and the percentage text. If you want you can also add an image and specify its position.
+               </p>
+
+               <hr>
+
+               <h2 id="slider-list">Slider List</h2>
+               <p>
+                  The first panel of the xSlider main page contains your slider list (as shown in the picture below) and allows you (with the buttons on the right) to have a quick preview, to go to the editing page, to duplicate a slider, to export or delete it.
+               </p>
+               <p>
+                  <img src="images/xslider-list.jpg" style="width:100%;">
+               </p>
+               <p>
+                  <strong>Importing/Exporting a Slider</strong><br>
+                  Moving a slider between websites is very easy. Just click on the <strong>Export</strong> button and xSlider will prepare a zip archive with the slider settings, elements, images, google fonts, etc. When you click on the <strong>IMPORT SLIDER</strong> button a popup will be shown asking you to select a zip file. Do it and click on the <strong>IMPORT</strong> button. That's it.
+               </p>
+               <p class="note">
+                  <strong>NOTE</strong>: exporting a slider all its contents will be zipped into an archive, except the html5 videos. That because their file size are ususally too large and on many webserver the zipping process may be interrupted due to the php timeout limit. So If you export a slider with html5 videos, after importing it you have to upload the video again.
+               </p>
+
+               <hr>
+
+               <h2 id="templates-use">Using the Templates</h2>
+               <p>
+                  Once installed one or more Template Packs, inside the second panel of the xSlider main page you will see the available templates that can be filtered by selecting one pack and/or insering a keyword. Under each template item you will find two buttons. The first one (<strong>Play</strong>) allows you to have a quick preview of the template, while the second (<strong>Use</strong>) drives you to the editing page where you can create a new slider starting from that template. So, when you click on the <strong>SAVE</strong> button, a new slider record is created.
+                  <br>
+                  The <strong>BROWSE ALL PACKS..</strong> allows you to see all the available Template Packs redirecting you to the <a href="http://xslider.develvet.com/template-packs/" target="_blank">xSlider</a> website.
+               </p>
+               <p>
+                  <img src="images/xslider-templates.jpg" style="width:100%;">
+               </p>
+
+               <hr>
+
+               <h2 id="google-fonts">Google Fonts</h2>
+               <p>
+                  With this panel you can manage the Google Fonts used by your sliders. To add a new one go to the <a href="https://www.google.com/fonts" target="_blank">Google Fonts website</a>, choose the font to add, click on the "quick use icon" (the second one), choose the styles you prefer and then copy&paste the entire link inclusion (for example: <i>&lt;link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700' rel='stylesheet' type='text/css'&gt;</i>) and click on the <strong>Add</strong> button.<br>
+                  Now in the font list of your <a href="#elements-text">Text Element Panels</a> you will see the added fonts. To delete a font just click on the trash icon on the left.
+               </p>
+               <p class="note">
+                  You surely don't want to make your website uselessly heavy by loading fonts that aren't use (which are used by templates or other not-published sliders). In this case the option in position 1 (<strong>Load on the website</strong>) cames to your aid, allowing you to enable/disable the loading on the website, leaving the font available in the dashboard. The defaul option if <strong>No</strong>, so remember to turn it to <strong>Yes</strong> for those fonts used in published sliders.
+               </p>
+               <p>
+                  <img src="images/xslider-fonts.jpg" style="width:100%;">
+               </p>
+
+               <hr>
+
+               <h2 id="global-settings">Global Settings</h2>
+               <p>
+                  The last panel containes some useful global settings. The first one (<strong>Who can use xSlider</strong>) allows you to choose the type of the user that can access the xSlider pages. The <strong>Place Javascript in Footer</strong> options could be useful for fixing plugins/themes conflicts. In case that your theme or other plugins already load FontAwesome or TweenMax, the last two options allow you to avoid loading them twice.
+               </p>
+               <p>
+                  <img src="images/xslider-global-settings.jpg" style="width:100%;">
+               </p>
+            </div>
+         </div>
+      </div>
+      <script type='text/javascript' src="js/jquery.min.js"></script>
+      <script type='text/javascript' src="js/bootstrap.min.js"></script>
+      <script type='text/javascript'>
+         // $(document).ready(function() {
+         $(window).load(function() {
+           $('#sidebar').affix({
+             offset: {
+               top: 40
+             }
+           });
+           var $body = $(document.body);
+           var navHeight = $('.navbar').outerHeight(true) + 10;
+           $body.scrollspy({
+             target: '#leftCol',
+             offset: navHeight
+           });
+           $('a[href*=#]:not([href=#])').click(function() {
+             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+               var target = $(this.hash);
+               target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+               if (target.length) {
+                 $('html,body').animate({
+                   scrollTop: target.offset().top - 50
+                 }, 1000);
+                 return false;
+               }
+             }
+           });
+         });
+      </script>
+   </body>
+</html>
